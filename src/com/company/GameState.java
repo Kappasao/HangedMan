@@ -1,7 +1,5 @@
 package com.company;
 
-import java.util.*;
-
 public class GameState {
     private String word;
     private boolean[] success;
