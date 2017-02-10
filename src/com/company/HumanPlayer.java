@@ -9,11 +9,19 @@ public class HumanPlayer {
     public char chooseLetter() {
 
         String letter = "";
-        do {
+        while (true) {
             GamePrinter.printInstructions();
             letter = scanner.next();
 
-            return letter.charAt(0);
-        } while (letter.length()!=1);
+
+            if (letter.length() == 1 && Character.isLetter(letter.charAt(0))) {
+
+                return Character.toLowerCase(letter.charAt(0));
+            }
+            else{
+                System.out.println("Please get some iq c: ");
+            }
+
+        }
     }
 }

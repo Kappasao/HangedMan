@@ -7,13 +7,15 @@ public class GameState {
     private boolean[] success;
     private int attempt;
 
+
     public GameState() {
 
         Dictionary dictionary = new Dictionary();
 
-        word = dictionary.getRandomWord();
+        this.word = dictionary.getRandomWord();
 
-        success = new boolean[word.length()];
+        this.success = new boolean[word.length()];
+
 
     }
 
